@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body{
+        background:#dadada
+        }
+
+        *{
+        margin:0; padding:0
+        }
+
+        #menu{
+        position:absolute; 
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        }
+
+        #menu ul ul{
+        display:none;
+        }
+
+        #menu  li{
+        float:left; 
+        list-style-type:none;
+        }
+
+        #menu li a{
+        display:block; 
+        background: #4e4e4e; 
+        color: #fff; 
+        text-decoration:none;
+        padding:30px
+        }
+
+        #menu li a:hover{
+        display:block; 
+        background: #575757;
+        color:orange;
+        }
+
+        #menu ul li:hover > ul{
+        display:block;
+        }
+
+        #menu ul{
+        position: relative;
+        }
+
+        #menu li{
+        font-family: Arial; 
+        text-align:center; 
+        width:140px;
+        }
+
+        p{
+        float:left;
+        margin-top: 100px; 
+        padding:20px;
+        }
+
+        .main{
+            background-color: #4e4e4e; 
+            height: 85px;
+            width: 100%;
+        }
+
+        .text:hover{
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav id="menu">
+    <ul>
+      <li class="text"><a href="#">Home</a></li>
+      <li class="text"><a href="#">About us</a>
+      <ul>
+          <li><a href="#">jQuery</a></li>
+          <li><a href="#">javascript</a></li>
+          </li>
+        </ul>
+      </li>
+      <li class="text"><a href="#">Blog</a></li>
+      <li class="text"><a href="#">Lessons</a>
+        <ul>
+          <li><a href="#">jQuery</a></li>
+          <li><a href="#">javascript</a></li>
+          <li><a href="#">html</a></li>
+          <li><a href="#">css</a>
+          </li>
+        </ul>
+      </li>
+      <li class="text"><a href="#">Contacts</a></li>
+    </ul>
+  </nav>
+  </div>
+  <p>
+    HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») — стандартизированный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML). Язык HTML интерпретируется браузерами; полученный в результате интерпретации форматированный текст отображается на экране монитора компьютера или мобильного устройства.
+
+        Язык HTML является приложением SGML (стандартного обобщённого языка разметки) и соответствует международному стандарту ISO 8879.
+
+        Язык XHTML является более строгим вариантом HTML, он следует всем ограничениям XML и, фактически, XHTML можно воспринимать как приложение языка XML к области разметки гипертекста.
+
+        Во всемирной паутине HTML-страницы, как правило, передаются браузерам от сервера по протоколам HTTP или HTTPS, в виде простого текста или с использованием шифрования.
+  </p>
+</body>
+</html>
